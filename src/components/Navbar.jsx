@@ -49,7 +49,7 @@ function Navbar() {
                 />
                 <button className="absolute right-1 flex items-center justify-center"
                 onClick={(e) => {
-                  e.stopPropagation(); // Prevents re-expanding on click
+                  e.stopPropagation();
                   setIsExpanded(false);
                   setQuery("");
                   setLocation("");
