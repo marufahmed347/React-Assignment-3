@@ -23,7 +23,7 @@ function Navbar() {
           <div className="flex justify-between items-center py-4 gap-4 lg:gap-0">
             {/* Logo */}
             <div>
-              <img className="w-full h-auto" src="/logo.png" alt="" />
+              <img className="w-full h-auto cursor-pointer" src="/logo.png" alt="" />
             </div>
 
             {/* middle */}
@@ -63,8 +63,8 @@ function Navbar() {
             {/* last */}
 
             <div className="hidden lg:flex gap-4">
-              <img className="size-6 my-auto" src="o.png" alt="" />
-              <button className="bg-[#1E1E1E] text-[15px] font-regular text-white px-4 py-2 rounded-full">
+              <img className="size-6 my-auto cursor-pointer" src="o.png" alt="" />
+              <button className="cursor-pointer bg-[#1E1E1E] text-[15px] font-regular text-white px-4 py-2 rounded-full">
                 MyFeedback for business
               </button>
             </div>
