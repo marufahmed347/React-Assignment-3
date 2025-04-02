@@ -5,28 +5,28 @@ const restaurants = [
     {
       name: "Bottega",
       images: ["img1.png", "img4.png", "img3.png", "img2.png"],
-      rating: 5.0,
+      rating: "5.0",
       reviews: 876,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     },
     {
       name: "Bottega",
       images: ["img2.png", "img3.png", "img4.png", "img1.png"],
-      rating: 5.0,
+      rating: "5.0",
       reviews: 876,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     },
     {
       name: "Bottega",
       images: ["img3.png", "img4.png", "img3.png", "img1.png"],
-      rating: 5.0,
+      rating: "5.0",
       reviews: 876,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     },
     {
       name: "Bottega",
       images: ["img4.png", "img1.png", "img2.png", "img3.png"],
-      rating: 5.0,
+      rating: "5.0",
       reviews: 876,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     }
@@ -35,35 +35,35 @@ const restaurants = [
     {
       name: "Bottega",
       images: ["img4.png", "img1.png", "img2.png", "img3.png"],
-      rating: 4.8,
+      rating: "5.0",
       reviews: 654,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     },
     {
       name: "Bottega",
       images: ["img3.png", "img4.png", "img1.png", "img2.png"],
-      rating: 4.9,
+      rating: "5.0",
       reviews: 732,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     },
     {
       name: "Bottega",
       images: ["img2.png", "img3.png", "img4.png", "img1.png"],
-      rating: 4.7,
+      rating: "5.0",
       reviews: 590,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     },
     {
       name: "Bottega",
       images: ["img1.png", "img4.png", "img3.png", "img2.png"],
-      rating: 5.0,
+      rating: "5.0",
       reviews: 821,
       description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
     }
   ]
 ];
 
-export default function RestaurantSlider() {
+export default function HeroArea() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -94,7 +94,7 @@ export default function RestaurantSlider() {
           <img className="size-15" src="left.png" alt="" />
         </button>
         <div className="w-full px-2 md:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {restaurants[currentIndex].map((restaurant, index) => (
               <div key={index} className="bg-white text-gray-800 rounded-lg shadow-md overflow-hidden relative">
                 <div className="relative">
@@ -114,7 +114,8 @@ export default function RestaurantSlider() {
                   <p className="text-sm text-[#8F8F8F]">{restaurant.description}</p>
                   <div className="flex items-center mt-2">
                     <span className="text-yellow-500">★★★★★</span>
-                    <span className="ml-2 text-sm text-[#8F8F8F]">{restaurant.rating} ({restaurant.reviews} reviews)</span>
+                    <span className="ml-2 font-medium">{restaurant.rating}</span>
+                    <span className="ml-2 text-[#8F8F8F] text-sm">({restaurant.reviews} reviews)</span>
                   </div>
                 </div>
               </div>

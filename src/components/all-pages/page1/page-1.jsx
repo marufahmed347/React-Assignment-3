@@ -1,12 +1,14 @@
 import React from 'react'
 import Icon from './Icon';
-import Hero from './Hero';
+import HeroArea from './Hero';
+import CardSection from './Card';
 
 function Page1() {
   return (
     <>
     <Icon/>
-    <Hero/>
+    <HeroArea/>
+    <CardSection/>
     </>
   )
 }
