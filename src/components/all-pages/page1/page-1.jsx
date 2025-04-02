@@ -2,6 +2,7 @@ import React from 'react'
 import Icon from './Icon';
 import HeroArea from './Hero';
 import CardSection from './Card';
+import FeedBack from './FeedBack';
 
 function Page1() {
   return (
@@ -9,6 +10,7 @@ function Page1() {
     <Icon/>
     <HeroArea/>
     <CardSection/>
+    <FeedBack/>
     </>
   )
 }
