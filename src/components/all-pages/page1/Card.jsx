@@ -77,11 +77,12 @@ const restaurants = [
 
 const CardSection = () => {
   return (
-    <div className="p-5 lg:p-10 mx-auto">
+    <>
+    <div className="px-5 lg:px-10 py-3 lg:py-5 mx-auto">
       <h2 className="text-2xl md:text-3xl font-bold text-[#1E1E1E] mb-4 text-start">The latest trends</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {restaurants.map((restaurant, index) => (
-          <div key={index} className="bg-white overflow-hidden relative">
+          <div key={index} className="overflow-hidden relative bg-[#F8F8F8] rounded-lg">
             <ImageSlider images={restaurant.images} />
             <div className="p-4">
               <h3 className="font-semibold text-lg text-[#232323]">{restaurant.name}</h3>
@@ -100,6 +101,12 @@ const CardSection = () => {
         ))}
       </div>
     </div>
+
+    <div className="lg:pb-10 px-5 lg:px-10 pb-5 lg:pt-5 pt-3">
+      <p className="text-2xl text-[#1E1E1E] text-center pb-3">Discover more cool restaurants</p>
+      <button className="px-8 py-2 bg-[#1677BD] text-white rounded-full cursor-pointer block mx-auto">Show more</button>
+    </div>
+    </>
   );
 };
 
