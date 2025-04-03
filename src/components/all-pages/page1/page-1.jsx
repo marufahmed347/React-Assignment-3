@@ -3,6 +3,7 @@ import Icon from './Icon';
 import HeroArea from './Hero';
 import CardSection from './Card';
 import FeedBack from './FeedBack';
+import Avtivities from './Avtivities';
 
 function Page1() {
   return (
@@ -11,6 +12,7 @@ function Page1() {
     <HeroArea/>
     <CardSection/>
     <FeedBack/>
+    <Avtivities/>
     </>
   )
 }
