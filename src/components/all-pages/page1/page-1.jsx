@@ -4,6 +4,7 @@ import HeroArea from './Hero';
 import CardSection from './Card';
 import FeedBack from './FeedBack';
 import Avtivities from './Avtivities';
+import Footer from './Footer';
 
 function Page1() {
   return (
@@ -13,6 +14,7 @@ function Page1() {
     <CardSection/>
     <FeedBack/>
     <Avtivities/>
+    <Footer/>
     </>
   )
 }
