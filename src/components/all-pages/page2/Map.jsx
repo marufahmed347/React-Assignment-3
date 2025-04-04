@@ -3,50 +3,50 @@ import React, { useState, useEffect } from "react";
 const restaurants = [
   {
     name: "The Snug",
-    rating: 4.8,
-    reviews: 450,
+    rating: 4.5,
+    reviews: 654,
     images: ["m1.png", "m7.png", "m6.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
   {
     name: "Bottega",
     rating: 5.0,
-    reviews: 105,
+    reviews: 1654,
     images: ["m2.png", "m5.png", "m4.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
   {
     name: "Little Shucker",
-    rating: 4.9,
-    reviews: 380,
+    rating: 3.5,
+    reviews: 553,
     images: ["m3.png", "m2.png", "m1.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
   {
-    name: "The Snug",
-    rating: 4.8,
-    reviews: 450,
+    name: "Lokma",
+    rating: 4.5,
+    reviews: 654,
     images: ["m1.png", "m7.png", "m6.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
   {
-    name: "Bottega",
-    rating: 5.0,
-    reviews: 105,
+    name: "Starbelly",
+    rating: 4.5,
+    reviews: 654,
     images: ["m2.png", "m5.png", "m4.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
   {
-    name: "Little Shucker",
-    rating: 4.9,
-    reviews: 380,
+    name: "The melt",
+    rating: 4.5,
+    reviews: 654,
     images: ["m3.png", "m2.png", "m1.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
   {
-    name: "Little Shucker",
-    rating: 4.9,
-    reviews: 380,
+    name: "Arabia Nights",
+    rating: 4.5,
+    reviews: 654,
     images: ["m3.png", "m2.png", "m1.png"],
     description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."
   },
@@ -88,11 +88,12 @@ const RestaurantCard = ({ restaurant }) => {
       <div>
         <h2 className="text-lg font-semibold">{restaurant.name}</h2>
         <p className="text-sm text-gray-600 mt-1">{restaurant.description}</p>
-        <div className="flex items-center text-yellow-500 mt-1">
+        <div className="flex items-center mt-1 md:mt-2">
           {[...Array(5)].map((_, i) => (
             <span key={i} className={i < Math.round(restaurant.rating) ? "text-yellow-500" : "text-gray-300"}>★</span>
           ))}
-          <span className="ml-2 text-gray-600 text-sm">{restaurant.rating} ({restaurant.reviews} reviews)</span>
+          <span className="ml-2 font-medium text-[#232323]">{restaurant.rating}</span>
+          <span className="ml-2 text-[#8F8F8F] text-sm">({restaurant.reviews} reviews)</span>
         </div>
       </div>
     </div>
@@ -104,10 +105,10 @@ const RestaurantList = () => {
 
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-1/2 p-5 lg:px-10 lg:pl-22 bg-white">
-        <p className="text-sm text-gray-600 mb-2"><span className="text-blue-500 cursor-pointer">Home</span> / All restaurants</p>
+      <div className="w-full md:w-1/2 p-5 lg:px-10 lg:pl-22">
+        <p className="text-sm text-[#232323] mb-2">Home / All restaurants</p>
         <div className="flex justify-between items-center mb-4 relative">
-          <h1 className="text-2xl font-bold">Best Restaurants in Singapore</h1>
+          <h1 className="text-2xl font-bold text-[#1E1E1E]">best restaurants in Singapore</h1>
           <button 
             className="flex items-center px-4 py-2 rounded-full bg-[#5E5E5E] text-white"
             onClick={() => setShowSortOptions(!showSortOptions)}
