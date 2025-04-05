@@ -21,7 +21,7 @@ const restaurants = [
   }
 ];
 
-const CardSection = () => {
+const MiniCard = () => {
   return (
     <>
     <div className="px-5 lg:pl-10 lg:pr-20 max-w-6xl py-3 mb-5 md:mb-10 lg:py-5 mx-auto">
@@ -83,4 +83,4 @@ const ImageSlider = ({ images }) => {
   );
 };
 
-export default CardSection;
+export default MiniCard;

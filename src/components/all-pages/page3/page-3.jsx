@@ -1,12 +1,14 @@
 import React from 'react'
 import HeroSection from './Hero'
-import CardSection from './MiniCard'
+import MiniCard from './MiniCard'
+import FooterSection from './Footer'
 
 function Page3() {
   return (
     <>
     <HeroSection/>
-    <CardSection/>
+    <MiniCard/>
+    <FooterSection/>
     </>
   )
 }
