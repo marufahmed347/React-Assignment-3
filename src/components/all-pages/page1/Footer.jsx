@@ -5,7 +5,7 @@ const Footer = () => {
   const [country, setCountry] = useState("Singapore");
 
   return (
-    <footer className="bg-white pb-6 max-w-6xl mx-auto">
+    <footer className="pb-6 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm px-5 mx-auto">
         <div className="mx-auto text-center md:text-start">
           <h3 className="font-extrabold text-[#1E1E1E] text-[16px] md:text-[20px]">About</h3>
