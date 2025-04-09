@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const restaurants = [
   {
@@ -75,6 +76,7 @@ const restaurants = [
   },
 ];
 
+
 const CardSection = () => {
   return (
     <>
@@ -104,7 +106,7 @@ const CardSection = () => {
 
     <div className="lg:pb-10 px-5 lg:px-10 pb-5 lg:pt-5 pt-3">
       <p className="text-2xl text-[#1E1E1E] text-center pb-3">Discover more cool restaurants</p>
-      <button className="px-8 py-2 bg-[#1677BD] text-white rounded-full cursor-pointer block mx-auto">Show more</button>
+      <button  className="px-8 py-2 bg-[#1677BD] text-white rounded-full cursor-pointer block mx-auto">Show more</button>
     </div>
     </>
   );
