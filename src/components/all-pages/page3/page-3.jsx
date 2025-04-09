@@ -4,6 +4,7 @@ import MiniCard from './MiniCard'
 import FooterSection from './Footer'
 import PhotoGallery from './Photos'
 import ContactCard from './Information'
+import OverallRating from './Rating'
 
 function Page3() {
   return (
@@ -11,6 +12,7 @@ function Page3() {
     <HeroSection/>
     <PhotoGallery/>
     <ContactCard/>
+    <OverallRating/>
 
 
     <MiniCard/>

@@ -46,9 +46,6 @@ const ContactCard = () => {
         <img src="map2.png" alt="" />
       </div>
     </div>
-
-
-    <hr className="my-5 max-w-[1110px] mx-auto  text-[#DCDCDC]" />
     </>
   );
 };
