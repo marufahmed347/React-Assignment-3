@@ -5,6 +5,7 @@ import FooterSection from './Footer'
 import PhotoGallery from './Photos'
 import ContactCard from './Information'
 import OverallRating from './Rating'
+import Reviews from './CardRow'
 
 function Page3() {
   return (
@@ -13,6 +14,7 @@ function Page3() {
     <PhotoGallery/>
     <ContactCard/>
     <OverallRating/>
+    <Reviews/>
 
 
     <MiniCard/>

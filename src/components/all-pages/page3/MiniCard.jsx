@@ -24,7 +24,7 @@ const restaurants = [
 const MiniCard = () => {
   return (
     <>
-    <div className="px-5 lg:pl-10 lg:pr-20 max-w-6xl py-3 mb-5 md:mb-10 lg:py-5 mx-auto">
+    <div className="px-5 lg:pr-30 max-w-6xl py-3 mb-5 md:mb-10 lg:py-5 mx-auto">
       <h2 className="text-2xl md:text-3xl font-bold text-[#1E1E1E] mb-6 text-start">Also discover...</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {restaurants.map((restaurant, index) => (

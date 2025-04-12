@@ -127,27 +127,17 @@ const RestaurantList = () => {
             <span className="mr-2"><img src="s.png" alt="sort icon" /></span> Sort
           </button>
           {showSortOptions && (
-            <div className="absolute right-0 top-16 xl:top-14 bg-white shadow-lg rounded-lg w-48 border border-gray-300 z-10">
+            <div className="absolute right-0 top-16 bg-white shadow-lg rounded-lg w-48 border border-[#E6E6E6] z-10">
               <div className="flex relative">
                 <div className="p-4">
-                  <p 
-                    onClick={() => { setSortOption("All feedbacks"); setShowSortOptions(false); }}
-                    className={`hover:bg-gray-100 p-2 cursor-pointer ${sortOption === "All feedbacks" ? "text-[#2146C7]" : "text-gray-700"}`}
-                  >
-                    All feedbacks
-                  </p>
-                  <p 
-                    onClick={() => { setSortOption("Highest rated"); setShowSortOptions(false); }}
-                    className={`hover:bg-gray-100 p-2 cursor-pointer ${sortOption === "Highest rated" ? "text-[#2146C7]" : "text-gray-700"}`}
-                  >
-                    Highest rated
-                  </p>
-                  <p 
-                    onClick={() => { setSortOption("Oldest rated"); setShowSortOptions(false); }}
-                    className={`hover:bg-gray-100 p-2 cursor-pointer ${sortOption === "Oldest rated" ? "text-[#2146C7]" : "text-gray-700"}`}
-                  >
-                    Oldest rated
-                  </p>
+                  <p onClick={() => { setSortOption("All feedbacks"); setShowSortOptions(false); }}
+                    className={`hover:bg-gray-100 p-2 cursor-pointer ${sortOption === "All feedbacks" ? "text-[#2146C7]" : "text-gray-700"}`}>All feedbacks</p>
+                    
+                  <p onClick={() => { setSortOption("Highest rated"); setShowSortOptions(false); }}
+                    className={`hover:bg-gray-100 p-2 cursor-pointer ${sortOption === "Highest rated" ? "text-[#2146C7]" : "text-gray-700"}`}> Highest rated</p>
+
+                  <p onClick={() => { setSortOption("Oldest rated"); setShowSortOptions(false); }}
+                    className={`hover:bg-gray-100 p-2 cursor-pointer ${sortOption === "Oldest rated" ? "text-[#2146C7]" : "text-gray-700"}`}>Oldest rated</p>
                 </div>
                 <div className="px-1 pt-2">
                   <button onClick={() => setShowSortOptions(false)} className="text-gray-600 text-xl">
