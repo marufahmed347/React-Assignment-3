@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const restaurantsData = [
   {
@@ -114,10 +115,15 @@ const RestaurantList = () => {
 
   const sortedRestaurants = getSortedRestaurants();
 
+
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col md:flex-row">
       <div className="w-full md:w-1/2 p-5 lg:px-10 lg:pl-22">
-        <p className="text-[16px] font-semibold text-[#232323] mb-2"><span>Home</span> / All restaurants</p>
+      
+        <p  onClick={() => navigate('/')} className="hover:text-[#2146C7] hover:underline text-[16px] font-semibold text-[#232323] mb-2">Home / All restaurants</p>
+
         <div className="flex justify-between items-center mb-4 relative">
           <h1 className="text-2xl font-bold text-[#1E1E1E]">best restaurants in Singapore</h1>
           <button 

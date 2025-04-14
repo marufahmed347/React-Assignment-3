@@ -6,6 +6,7 @@ import PhotoGallery from "./Photos";
 import ContactCard from "./Information";
 import OverallRating from "./Rating";
 import Reviews from "./CardRow";
+import Navbar from "../../Navbar";
 
 function Page3() {
   const [showMenu, setShowMenu] = useState(false);
@@ -38,6 +39,7 @@ function Page3() {
 
   return (
     <>
+      <Navbar/>
       <HeroSection />
       <PhotoGallery />
       <ContactCard />

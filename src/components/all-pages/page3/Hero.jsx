@@ -1,12 +1,16 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
     <hr className="my-2 text-[#DCDCDC]" />
 
     <div className="font-sans mb-5 md:mb-10">
-      <div className="text-[16px] font-semibold text-[#232323] px-6 md:px-12 lg:px-22 py-2">
+      <div  onClick={() => navigate('/')} className="hover:text-[#2146C7] hover:underline text-[16px] font-semibold text-[#232323] px-6 md:px-12 lg:px-22 py-2">
         Home / Bellaitalia
       </div>
 

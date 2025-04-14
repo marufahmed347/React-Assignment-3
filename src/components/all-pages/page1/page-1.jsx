@@ -5,10 +5,12 @@ import CardSection from './Card';
 import FeedBack from './FeedBack';
 import Avtivities from './Avtivities';
 import Footer from './Footer';
+import Navbar from '../../Navbar';
 
 function Page1() {
   return (
     <>
+    <Navbar/>
     <Icon/>
     <HeroArea/>
     <CardSection/>
