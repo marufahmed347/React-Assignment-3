@@ -1,8 +1,8 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Page1 from './components/all-pages/page1/Page-1';
-import Page2 from './components/all-pages/page2/Page-2';
-import Page3 from './components/all-pages/page3/Page-3';
+import Page1 from './components/allPages/page1/Page1';
+import Page2 from './components/allPages/page2/Page2';
+import Page3 from './components/allPages/page3/Page3';
 
 function App() {
 
