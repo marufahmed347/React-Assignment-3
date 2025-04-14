@@ -195,18 +195,16 @@ const Reviews = () => {
   return (
     <div className="max-w-6xl mx-auto px-5 lg:pr-30 py-8 space-y-6 relative">
       <div className="flex justify-start mb-6">
-        <div className="flex gap-2">
+        <div className="flex gap-10">
           <button
-            className="border px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200"
-            onClick={() => setShowFilter(!showFilter)}
-          >
-            Filter
+            className="border flex gap-2 text-[#5E5E5E] border-[#5E5E5E] px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 items-center"
+            onClick={() => setShowFilter(!showFilter)}>
+            <img src="filter.png" className="h-[10px] w-4" alt="" /> Filter
           </button>
           <button
-            className="border px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200"
-            onClick={() => setShowSort(!showSort)}
-          >
-            Sort
+            className="border flex gap-2 text-[#5E5E5E] border-[#5E5E5E] px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 items-center"
+            onClick={() => setShowSort(!showSort)}>
+            <img src="sort.png" className="size-4" alt="" />  Sort
           </button>
         </div>
       </div>
